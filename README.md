@@ -1,0 +1,1 @@
+# hazama714.github.io
