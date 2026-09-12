@@ -11,6 +11,42 @@
   font-size: 0.98rem;
 }
 
+.en-heading {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: clamp(1.08rem, 2vw, 1.35rem);
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
+
+.section-en {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.contact-en {
+  margin-top: 8px;
+  font-size: 0.96rem;
+}
+
+.en-copy {
+  margin: 10px 0 0;
+  color: #8795ae !important;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.compact-en {
+  margin-top: 10px !important;
+}
+
+.en-inline {
+  display: block;
+  margin-top: 3px;
+  color: #8795ae;
+  font-size: 0.88rem;
+}
+
 .studio-mark {
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -42,7 +78,16 @@
 }
 
 .studio-mark-row strong {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
   font-size: 1.08rem;
+}
+
+.studio-mark-row small {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 .work-grid {
@@ -92,8 +137,7 @@
   color: var(--accent);
   font-size: 0.73rem;
   font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .project-card .pill {
@@ -195,6 +239,11 @@
 @media (max-width: 640px) {
   .studio-hero {
     min-height: auto;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
   .work-card {
