@@ -3,188 +3,161 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Official publisher website for Studio Hazama 714, creator of Android Edge AI Runtime for Unity and Project Salieri AI.">
+  <meta name="description" content="Studio Hazama 714 — independent development studio for AI runtimes, Unity tools, virtual characters, and Physical AI systems.">
   <meta name="theme-color" content="#0b1020">
-  <title>Studio Hazama 714 | Unity, Edge AI and Physical AI</title>
+  <title>Studio Hazama 714 | AI, Unity and Physical Systems</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Studio Hazama 714 home">Studio Hazama 714</a>
+      <a class="brand" href="#top" aria-label="Studio Hazama 714 home">Studio Hazama 714</a>
       <nav aria-label="Primary navigation">
-        <a href="#product">Product</a>
-        <a href="#salieri">Project Salieri AI</a>
-        <a href="#developer">Developer</a>
-        <a href="support.html">Support</a>
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="top">
+    <section class="hero studio-hero">
       <div class="container hero-grid">
         <div>
-          <p class="eyebrow">Unity · Android · Local AI · Physical AI</p>
-          <h1>AI tools and embodied systems</h1>
+          <p class="eyebrow">Independent AI / Unity Studio</p>
+          <h1>AI, characters, and the physical world.</h1>
           <p class="lead">
-            Independent development focused on practical local AI integration,
-            native runtime engineering, virtual characters, and embodied AI systems.
+            Studio Hazama 714 develops practical systems that connect local AI,
+            Unity applications, virtual characters, and physical hardware.
+          </p>
+          <p class="hero-subline">
+            From commercial runtime tools to experimental Physical AI projects.
           </p>
           <div class="actions">
-            <a class="button primary" href="#product">View product</a>
-            <a class="button secondary" href="#salieri">View Project Salieri AI</a>
+            <a class="button primary" href="#work">View current work</a>
+            <a class="button secondary" href="https://github.com/hazama714">GitHub</a>
           </div>
         </div>
 
-        <div class="runtime-card" aria-label="Runtime architecture">
-          <div class="runtime-node">
-            <span>Unity application</span>
-            <strong>C#</strong>
-          </div>
-          <div class="runtime-arrow" aria-hidden="true">↓</div>
-          <div class="runtime-node">
-            <span>Native integration</span>
-            <strong>P/Invoke</strong>
-          </div>
-          <div class="runtime-arrow" aria-hidden="true">↓</div>
-          <div class="runtime-node">
-            <span>On-device runtime</span>
-            <strong>C++ / GGUF</strong>
-          </div>
+        <div class="studio-mark" aria-label="Studio Hazama 714 focus areas">
+          <div class="studio-mark-row"><span>01</span><strong>Local AI</strong></div>
+          <div class="studio-mark-row"><span>02</span><strong>Unity Runtime</strong></div>
+          <div class="studio-mark-row"><span>03</span><strong>Virtual Characters</strong></div>
+          <div class="studio-mark-row"><span>04</span><strong>Physical AI</strong></div>
         </div>
       </div>
     </section>
 
-    <section id="product" class="section">
+    <section id="work" class="section">
       <div class="container">
-        <p class="eyebrow">Current Unity Asset Store product</p>
-        <h2>Android Edge AI Runtime for Unity</h2>
+        <p class="eyebrow">Current Work</p>
+        <h2>Products and projects</h2>
         <p class="section-intro">
-          A Unity runtime integration for executing compatible local GGUF language
-          models on supported Android devices. It connects Unity C# code directly
-          to a native C++ runtime without requiring a separate inference server.
+          Commercial tools and public research projects are separated into their own sites.
+          This page serves as the Studio Hazama 714 entry point.
         </p>
 
-        <div class="feature-grid">
-          <article class="card">
-            <p class="card-kicker">01</p>
-            <h3>Local inference</h3>
+        <div class="work-grid">
+          <article class="work-card product-card">
+            <div class="work-card-topline">
+              <span class="pill">Current Product</span>
+              <span class="work-meta">Unity Asset Store</span>
+            </div>
+            <h3>Android Edge AI Runtime for Unity</h3>
             <p>
-              Run compatible local language models directly on supported Android
-              hardware.
+              A Unity runtime integration for running compatible local GGUF language
+              models directly on supported Android devices.
             </p>
+            <ul class="compact-list">
+              <li>Unity C# → native C++ runtime integration</li>
+              <li>Local / offline-oriented inference</li>
+              <li>Android arm64 deployment</li>
+            </ul>
+            <div class="actions">
+              <a class="button primary" href="https://hazama714.github.io/Project-Salieri-AI-Android-Runtime/">Product website</a>
+              <a class="button secondary" href="https://github.com/hazama714/Project-Salieri-AI-Android-Runtime">GitHub</a>
+              <a class="button secondary" href="support.html">Support</a>
+            </div>
           </article>
 
-          <article class="card">
-            <p class="card-kicker">02</p>
-            <h3>Unity integration</h3>
+          <article class="work-card project-card">
+            <div class="work-card-topline">
+              <span class="pill">Public Project</span>
+              <span class="work-meta">Physical AI · v0.1</span>
+            </div>
+            <h3>Project Salieri AI</h3>
             <p>
-              Call the native runtime from Unity C# through a direct application
-              integration layer.
+              A Physical AI Runtime for connecting an AI character's perception,
+              attention, conversation, body expression, and physical robot control.
             </p>
-          </article>
-
-          <article class="card">
-            <p class="card-kicker">03</p>
-            <h3>Offline-oriented</h3>
-            <p>
-              Designed for projects that benefit from local execution and reduced
-              dependence on network services.
-            </p>
-          </article>
-
-          <article class="card">
-            <p class="card-kicker">04</p>
-            <h3>Setup resources</h3>
-            <p>
-              Includes sample content and documentation for runtime configuration
-              and Android deployment.
-            </p>
+            <ul class="compact-list">
+              <li>VRM / IK / VirtualBody</li>
+              <li>Attention / Conversation / Free Pose</li>
+              <li>Arduino / Servo physical output</li>
+            </ul>
+            <div class="actions">
+              <a class="button primary" href="https://hazama714.github.io/Project-Salieri-AI/">Project website</a>
+              <a class="button secondary" href="https://github.com/hazama714/Project-Salieri-AI">GitHub</a>
+              <a class="button secondary" href="https://discord.gg/tJhNYX4sfB" target="_blank" rel="noopener noreferrer">Discord</a>
+            </div>
           </article>
         </div>
+      </div>
+    </section>
 
-        <div class="split-panel">
-          <div>
-            <p class="eyebrow">Typical workflow</p>
-            <h3>From Unity project to Android device</h3>
-          </div>
-          <ol class="steps">
-            <li><span>1</span>Import the package into a Unity project.</li>
-            <li><span>2</span>Add and configure the runtime component.</li>
-            <li><span>3</span>Set the model path and runtime parameters.</li>
-            <li><span>4</span>Build for a supported Android arm64 device.</li>
-            <li><span>5</span>Run inference locally from the Unity application.</li>
-          </ol>
+    <section id="research" class="section alt">
+      <div class="container research-grid">
+        <div>
+          <p class="eyebrow">Research & Experiments</p>
+          <h2>From runtime engineering to embodied AI.</h2>
         </div>
-
-        <div class="notice">
-          <h3>Important product notes</h3>
+        <div class="research-copy">
           <p>
-            GGUF model files are not included. Actual model compatibility,
-            performance, and memory requirements depend on the selected model,
-            Android device, available memory, and project configuration.
+            Studio Hazama 714 also works on experimental systems around on-device AI,
+            character-driven robot control, memory, perception, and human-scale Physical AI.
+          </p>
+          <p>
+            Research notes, prototypes, and publications will be organized here as the work matures.
+          </p>
+          <a class="text-link" href="https://github.com/hazama714">Browse public repositories →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container split-panel studio-about">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Studio Hazama 714</h2>
+        </div>
+        <div>
+          <p><strong>Developer: Hazama Kaizuka</strong></p>
+          <p>
+            Independent developer focused on practical integration across AI inference,
+            Unity, Android, virtual characters, embedded control, and robotics.
+          </p>
+          <p>
+            The goal is not to isolate AI as a single model, but to connect perception,
+            software behavior, character expression, and physical action into systems that
+            can be built and tested on consumer hardware.
           </p>
         </div>
       </div>
     </section>
 
-    <section id="salieri" class="section alt">
-      <div class="container narrow">
-        <p class="eyebrow">Open Physical AI project · Public v0.1</p>
-        <h2>Project Salieri AI</h2>
-        <p class="section-intro">
-          Project Salieri AI is a Physical AI Runtime for giving AI characters a body
-          in the real world. It connects perception, attention, conversation, character
-          motion, VirtualBody retargeting, and physical robot control into one execution path.
-        </p>
-        <p>
-          The public project includes the core Unity runtime source, original VirtualBody
-          assets, and Arduino firmware. Development notes, progress, concrete Codex
-          instructions, questions, consultation, and casual discussion are shared on Discord.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="https://hazama714.github.io/Project-Salieri-AI/">Project website</a>
-          <a class="button secondary" href="https://github.com/hazama714/Project-Salieri-AI">GitHub repository</a>
-          <a class="button secondary" href="https://github.com/hazama714/Project-Salieri-AI/releases/tag/v0.1">Public v0.1</a>
-          <a class="button secondary" href="https://discord.gg/tJhNYX4sfB" target="_blank" rel="noopener noreferrer">Discord</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="developer" class="section">
-      <div class="container narrow">
-        <p class="eyebrow">Publisher and developer</p>
-        <h2>Studio Hazama 714</h2>
-        <p><strong>Developer: Hazama Kaizuka</strong></p>
-        <p>
-          Independent developer working on local AI runtimes, Unity integration,
-          virtual characters, and embodied AI robotics through Project Salieri.
-        </p>
-        <p>
-          The development focus is practical integration: connecting AI inference,
-          application logic, visual expression, memory, and physical control into
-          systems that can run on consumer hardware.
-        </p>
-        <div class="actions">
-          <a class="button primary" href="mailto:otakunokaseki@gmail.com">Contact by email</a>
-          <a class="button secondary" href="https://github.com/hazama714">GitHub profile</a>
-          <a class="button secondary" href="https://github.com/hazama714/Project-Salieri-AI-Android-Runtime">Android Edge AI Runtime repository</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section compact">
+    <section id="contact" class="section compact">
       <div class="container callout">
         <div>
-          <p class="eyebrow">Technical support</p>
-          <h2>Documentation and issue reporting</h2>
-          <p>
-            Setup guidance, required diagnostic information, and support links are
-            available on the support page.
-          </p>
+          <p class="eyebrow">Contact</p>
+          <h2>Development, product, and project inquiries</h2>
+          <p>For product support, technical discussion, or development inquiries, use the links here.</p>
         </div>
-        <a class="button primary" href="support.html">Go to support</a>
+        <div class="actions contact-actions">
+          <a class="button primary" href="mailto:otakunokaseki@gmail.com">Email</a>
+          <a class="button secondary" href="https://github.com/hazama714">GitHub</a>
+          <a class="button secondary" href="support.html">Product Support</a>
+        </div>
       </div>
     </section>
   </main>
@@ -193,8 +166,8 @@
     <div class="container footer-inner">
       <p>© 2026 Studio Hazama 714</p>
       <div class="footer-links">
+        <a href="https://hazama714.github.io/Project-Salieri-AI-Android-Runtime/">Android Edge AI Runtime</a>
         <a href="https://hazama714.github.io/Project-Salieri-AI/">Project Salieri AI</a>
-        <a href="support.html">Support</a>
         <a href="privacy.html">Privacy</a>
         <a href="https://github.com/hazama714">GitHub</a>
       </div>
